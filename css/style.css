@@ -32,3 +32,127 @@
     --border-radius-rounded: 50%;
 }
 
+/* general */
+html,
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+
+
+}
+
+/* top-menu */
+
+/* designs the initial base for the top menu bar */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 2.5rem;
+}
+
+    /* aligns the items in the menu bar, flex */
+    .top-menu .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+       
+
+
+        .top-menu .site-settings  {
+
+            display: flex;
+        }
+    
+            /* fixes the drop down menu, not sure if this part is needed, the same value as inherited */
+        .top-menu .site-settings .dropdown-theme {
+            background-color: var(--color-theme);
+            color: var var(--color-white);
+        }
+    
+            /* fixes the design of the ENG button */
+            .top-menu .site-settings .dropdown-theme button {
+                background-color: var(--color-theme);
+                color: var var(--color-white);
+                border: none;
+    
+            }
+    
+            /* designs the eng/swe menu so it is the right color, font etc */
+            .top-menu .site-settings .dropdown-theme .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var var(--color-white);
+                border: none;
+                width: 15rem;
+    
+            }
+    
+                /* The ENG button turns dark when clicking*/
+                .top-menu .site-settings .dropdown-theme button:hover {
+                    color: var(--color-theme-dark);
+                }
+    
+                /* the distance between eng and the tick */
+                .dropdown .fa-solid {
+    
+                    margin-left: 0.375rem;
+                }
+    
+                /* designs the dropdown menu so it is the right width and color when direction at, clicking */
+                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                    background-color: var(--color --color-theme);
+                    color: var var(--color-white);
+                    border: none;
+                    width: 100%;
+                    margin: 0;
+                }
+    
+                /* Fixes the hover on eng-swe dark theme and color of the text */
+                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                    background-color: var(--color-theme-dark);
+                    color: var var(--color-white);
+                    
+                }
+
+ /* designs the buttons on the right side of the menu */
+ .top-menu .menu-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 1.2rem;
+}
+
+    /* top right menu options turn dark when clicking or directed at */
+    .top-menu .menu-links a:hover {
+        color: var(--color-theme-dark);
+    }                
+                
+/* fixes the distance between FAQs and facebook symbol */
+.top-menu .menu-links .social-media {
+    margin-left: 1rem;
+}
+
+    /* fixes the distance between social media symbols */
+    .top-menu .menu-links .social-media a {
+        margin: 0 0.3rem;
+    }
+
+        .top-menu .menu-links .social-media a:last-child {
+             margin: 0 0 0 0.3rem;
+        }
+
+
+    
+
+
+
+
+
+            
+
+
