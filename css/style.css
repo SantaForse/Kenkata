@@ -40,9 +40,22 @@ body {
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
-
-
 }
+
+.btn-theme {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.31rem;
+    padding-right: 1.31rem;
+    border: none;
+}
+
+    .btn-theme:hover {
+        background-color: var(--color-theme);
+        color: var(--color-theme-dark);
+    }
 
 /* top-menu */
 
@@ -66,10 +79,9 @@ body {
        
 
 
-        .top-menu .site-settings  {
-
-            display: flex;
-        }
+    .top-menu .site-settings  {
+        display: flex;
+    }
     
             /* fixes the drop down menu, not sure if this part is needed, the same value as inherited */
         .top-menu .site-settings .dropdown-theme {
@@ -83,8 +95,6 @@ body {
                 color: var var(--color-white);
                 border: none;
                 padding: 0;
-    
-    
             }
     
             /* designs the eng/swe menu so it is the right color, font etc */
@@ -92,7 +102,7 @@ body {
                 background-color: var(--color-theme);
                 color: var var(--color-white);
                 border: none;
-                width: 15rem;
+                width: 7rem;
                 
             }
     
@@ -103,63 +113,60 @@ body {
     
                 /* the distance between eng and the tick */
                 .dropdown .fa-solid {
-    
                     margin-left: 0.375rem;
                     margin-right: 0.375rem;
                 }
     
                 /* designs the dropdown menu so it is the right width and color when direction at, clicking */
                 .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
-                    background-color: var(--color --color-theme);
+                    background-color: var(--color-theme);
                     color: var var(--color-white);
                     border: none;
                     width: 100%;
                     margin: 0;
                 }
     
-                /* Fixes the hover on eng-swe dark theme and color of the text */
-                .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
-                    background-color: var(--color-theme-dark);
-                    color: var var(--color-white);
-                    
-                }
+                    /* Fixes the hover on eng-swe dark theme and color of the text */
+                    .top-menu .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                        background-color: var(--color-theme);
+                        color: var(--color-theme-dark);
+                    }
 
 .top-menu .menu-links {
-
     display: none;
 }                
 
-.top-menu .menu-links .links {
-    display: none;
-    
-}
-
- /* designs the buttons on the right side of the menu */
- .top-menu .menu-links a {
-    color: var(--color-white);
-    text-decoration: none;
-    margin: 0 1.2rem;
-}
-
-    /* top right menu options turn dark when clicking or directed at */
-    .top-menu .menu-links a:hover {
-        color: var(--color-theme-dark);
-    }                
-                
-/* fixes the distance between FAQs and facebook symbol */
-.top-menu .menu-links .social-media {
-    margin-left: 1rem;
-    font-size: var(--font-size-14);
-}
-
-    /* fixes the distance between social media symbols */
-    .top-menu .menu-links .social-media a {
-        margin: 0 0.3rem;
+    .top-menu .menu-links .links {
+        display: none;
+        
     }
 
-        .top-menu .menu-links .social-media a:last-child {
-             margin: 0 0 0 0.3rem;
+    /* designs the buttons on the right side of the menu */
+    .top-menu .menu-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin: 0 1.2rem;
+    }
+
+        /* top right menu options turn dark when clicking or directed at */
+        .top-menu .menu-links a:hover {
+            color: var(--color-theme-dark);
+        }                
+                
+    /* fixes the distance between FAQs and facebook symbol */
+    .top-menu .menu-links .social-media {
+        margin-left: 1rem;
+        font-size: var(--font-size-14);
+    }
+
+        /* fixes the distance between social media symbols */
+        .top-menu .menu-links .social-media a {
+            margin: 0 0.3rem;
         }
+
+            .top-menu .menu-links .social-media a:last-child {
+                margin: 0 0 0 0.3rem;
+            }
 
 
 /* Main menu */
@@ -190,82 +197,126 @@ body {
         align-items: center;
     }
 
-    .main-menu .menu-links .menu-link {
-        text-decoration: none;
-        color: var(--color-theme-dark);
-        margin: 0 0.7rem;
+        .main-menu .menu-links .menu-link {
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            margin: 0 0.7rem;
 
-    }
-    .main-menu .menu-links .menu-link hover {
-        color: var(--color-theme);
-    
-    }
+        }
+            .main-menu .menu-links .menu-link:hover {
+                color: var(--color-theme);
+            
+            }
 
-    .main-menu .menu-links .menu-link:first-child {
-        margin: 0 2.4rem 0 0;
-    }
+            .main-menu .menu-links .menu-link:first-child {
+                margin: 0 2.4rem 0 0;
+            }
 
-    .main-menu .menu-links .menu-link:last-child {
-        margin: 0 0 0 0.8rem;
+            .main-menu .menu-links .menu-link:last-child {
+                margin: 0 0 0 0.8rem;
 
-    }
+            }
 
-    .main-menu .menu-links .menu-link i {
-        font-size: 1.33em;
-        
-    }
+            .main-menu .menu-links .menu-link i {
+                font-size: 1.33em;
+                
+            }
+
+                .main-menu .menu-links .menu-link i:hover {
+                    color: var(--color-theme);
+                    
+                }
 
 
     .main-menu nav {
-
         border-top: 1px solid var(--color-gray-2);
+        border-bottom: 1px solid var(--color-gray-2);
     }
 
-    .main-menu > nav .container {
-        padding: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .main-menu nav .browse-categories {
-        flex: 2;
-    }
-
-    .main-menu nav .special-offer {
-        flex: 7;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-
-    }
-
-
-
-
-
-
-            
-
-
-
-    @media (min-width: 578px)  {
-
-        .top-menu .menu-links {
-            display: inline;
-        }
-    
-        .top-menu > .container {
+        .main-menu > nav .container {
+            padding: 0;
+            display: flex;
             justify-content: space-between;
+            align-items: center;
+
         }
-    }  
-    
-    @media (min-width: 992px) {
+
+        .main-menu nav .browse-categories {
+            flex: 1;
+        }
+
+            .main-menu nav .browse-categories span {
+                display: flex;
+                align-items: center;
+            }
+
+
+            .main-menu nav .browse-categories button {
+                background-color: var(--color-theme);
+                border: none;
+                color: var(--color-white);
+                font-size: 1rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 1rem;
+            }
+
+                .main-menu nav .browse-categories button:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-theme-dark);
+                } 
+
+                .main-menu nav .browse-categories button i {
+                    font-size: 1.4rem;
+                }
+
+                .main-menu nav .browse-categories button .fa-chevron-down {
+                    font-size: 1rem;
+                }
+
+            .main-menu nav .browse-categories .dropdown-menu {
+                background-color: var(--color-theme);
+                width: 100%;
+            }
         
-    
-        .top-menu .menu-links .links {
-            display: inline;
+                .main-menu nav .browse-categories .dropdown-menu .dropdown-item {
+                    color: var(--color-white);   
+                }
+
+                    .main-menu nav .browse-categories .dropdown-menu .dropdown-item:hover {
+                        background-color:var(--color-theme);
+                        color:var(--color-theme-dark);
+                    }
+
+
+        .main-menu nav .special-offer {
+            flex: 4;
+            display: flex;
+            justify-content: end;
+            align-items: center;
         }
+
+
+
+
+@media (min-width: 578px)  {
+
+    .top-menu .menu-links {
+        display: inline;
     }
+
+    .top-menu > .container {
+        justify-content: space-between;
+    }
+}  
+
+@media (min-width: 992px) {
+    
+
+    .top-menu .menu-links .links {
+        display: inline;
+    }
+}
     
