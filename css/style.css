@@ -77,6 +77,9 @@ body {
         color: var(--color-theme-dark);
     }
 
+.bg-theme {
+    background-color: var(--color-theme);
+}
 
 .section-title {
     padding: 3rem 0;
@@ -265,6 +268,24 @@ body {
                     color: var(--color-theme);
                     
                 }
+
+        .main-menu .menu-links #cart {
+            position: relative;
+            
+        }
+
+            .main-menu .menu-links #cart .badge {
+                position: absolute;
+                top: -1.2rem;
+                left: 0.7rem;
+            }
+
+                .main-menu .menu-links #cart:hover .badge {
+                    background-color: var(--color-theme-dark);
+
+                }
+
+
 
 
     .main-menu nav {
@@ -464,6 +485,7 @@ body {
     }
 
     .shop-by-category .category-box {
+        position: relative;
         background-color: var(--color-gray-1);
         border-radius: var(--border-radius-small);
         height: 100%;
@@ -472,6 +494,9 @@ body {
     }
 
         .shop-by-category .category-box .category-box-title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
             width: 50%;
             border-radius: 0 var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);
@@ -479,6 +504,24 @@ body {
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
         }
+
+        .shop-by-category .category-box:hover .category-box-title {
+            height: 70px;
+
+        }
+
+            .shop-by-category .category-box .category-box-title span {
+                display: none;
+            }
+
+            .shop-by-category .category-box:hover .category-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+            }
+
+
+
 
     #category-box-1 {
         grid-column: 1/2;
@@ -526,6 +569,86 @@ body {
 
 /* the instructions for adjustments are in video 3HTML och CSS grig and positioning starting at 55 min of the video */
 
+@media (max-width: 578px) {
+
+    .main-menu .brand a {
+        padding-left: 1rem;
+    }
+
+    .main-menu .container .menu-links .menu-link:last-child span {
+        display: none;
+    }
+
+
+
+    .webshop-info .container {
+        display: inline;
+        
+    }
+
+
+    
+    
+
+
+
+}
+
+@media only screen and (max-width: 578px) {
+    .shop-by-category .container .grid {
+        grid-template-columns: 1fr;
+        column-width: 100%;
+        grid-template-rows: repeat(7, 6rem);
+        grid-template-areas:
+        "category-box-1"
+        "category-box-2"
+        "category-box-3"
+        "category-box-4"
+        "category-box-5"
+        "category-box-6"
+        "category-box-7";
+    }
+
+    
+    #category-box-1 {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+
+    #category-box-2 {
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    } 
+
+    #category-box-3 {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    } 
+
+    #category-box-4 {
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    } 
+
+    #category-box-5 {
+        grid-column: 1/-1;
+        grid-row: 5/6;
+    } 
+
+    #category-box-6 {
+        grid-column: 1/-1;
+        grid-row: 6/7;
+    } 
+
+    #category-box-7 {
+        grid-column: 1/-1;
+        grid-row: 7/-1;
+    } 
+
+
+}
+
+
 
 @media (min-width: 578px)  {
 
@@ -557,6 +680,24 @@ body {
 }
 
 @media (max-width: 992px) {
+
+.main-menu .container .menu-links .menu-link:first-child {
+    margin: 0;
+}
+
+    .main-menu .container .menu-links .menu-link:first-child span {
+        display: none;
+    }
+
+
+.main-menu .container .special-offer {
+    display: none;
+}
+
+.main-menu .container .browse-categories .dropdown button {
+    justify-content: center;
+    
+    }
 
 .showcase .showcase-body {
     padding: 0.5rem;
@@ -601,6 +742,11 @@ body {
         
         
     }
+
+    .main-menu .browse-categories .dropdown-menu li:last-child {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1200px){
