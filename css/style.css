@@ -5,6 +5,7 @@
     --color-theme: #20D3C2;
     --color-theme-light: #EDFCFA;
     --color-theme-dark: #0E153D;
+    --color-theme-dark-light: #50546E;
     --color-dark: #080C24;
     --color-white: #FFFFFF;
     --color-gray-0: #AAAAAA;
@@ -707,8 +708,40 @@ body {
 
 
 
+.site-title {
+    background-color: var(--color-theme-dark-light);
+    color: #FFFFFF;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
-    
+
+    .site-title .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    .site-title h1 {
+    color: var(--color-theme);
+    font-size:1.125rem;
+    margin: 0;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-medium);
+    }
+
+    .site-title nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
 
 
 
@@ -716,6 +749,7 @@ body {
 
 
 /* the instructions for adjustments are in video 3HTML och CSS grig and positioning starting at 55 min of the video */
+/* adjusting the website to different devices/sizes */
 
 @media (max-width: 578px) {
 
