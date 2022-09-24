@@ -596,6 +596,7 @@ body {
 
     .new-arrivals {
         padding-top: 2rem;
+        padding-bottom:10.125rem ;
     }
 
         .new-arrivals .card {
@@ -742,10 +743,239 @@ body {
     }
 
 
+/* divider part, 30%off */
+
+.divider {
+    background-color: #CCCCCC;
+
+}
+
+    .divider .container {
+        display: flex;
+        min-height: 420px;
+        border: 1px black solid;
+        padding: 0;
+    }
+
+        .left-wing {
+            flex: 1;
+            background-color: #20D3C2;
+            text-align: center;
+            color: white;
+            padding: 2rem 0; 
+            display: flex;  
+            border: 1px black solid;    
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+
+        }
+
+            .left-wing .left-wing-menu {
+                
+                border: 1px black solid;
+
+            }
+
+            .left-wing .left-wing-menu h1 {
+                font-size:3.75rem;
+                font-family: var(--font-play);
+                font-weight: bold;
+            }
+
+            .left-wing .left-wing-menu strong {
+                font-size: 2.25rem;
+                font-family: var(--font-play);
+                font-weight: bold;
+            }
+
+            .left-wing .left-wing-menu p {
+                font-size: 1rem;
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-regular);
+            }
+
+
+        .left-wing a {
+            background-color: #0E153D;
+            color: white;
+            border-radius: 30px;
+        }
+
+        .left-wing a:hover {
+            background-color: var(--color-white);
+            color: var(--color-theme-dark);
+        }
+
+        
+
+       
+            
+
+        .middle-wing {
+            flex: 2;
+
+        }
+
+        .right-wing {
+            flex: 2;
+            text-align: start;
+            display: block;
+            color: white;
+            padding: 2rem 0;
+            display: flex;
+            align-items: center;
+            
+        
+        }
+
+       
+
+
+            .right-wing a {
+                background-color: white;
+                color: #20D3C2;
+                border-radius: 30px;
+                width: 10.7rem;
+                height: 3.375rem;
+                text-align: center;
+            
+            }
+
+            .right-wing a:hover {
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+            }
+
+
+/* Bottom divider, FLASH SALE UP TO 50% OFF */
+
+.bottom-divider {
+    background-color: #292F51;
+
+}
+
+    .bottom-divider .container {
+        display: flex;
+        padding: 0;
+       height: 400px;
+    }
+
+    .bottom-left-wing {
+        flex: 1;
+        background-color: #20D3C2;
+        text-align: center;
+        color: white;
+        padding: 2rem 0; 
+        display: flex;     
+        align-items: center;
+        justify-content: center;
+        height: 61%;
+        border: 2px black solid;
+    }
+    
+    .bottom-left-wing-menu h1 {
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: 3.75rem;
+    }
+
+    .bottom-left-wing-menu p {
+        font-family: var(--font-roboto);
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-medium);
+    }
+    .bottom-divider .bottom-right-wing {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .bottom-divider .bottom-right-wing-menu {
+        align-items: center;
+        
+
+    }
+        .bottom-divider .bottom-right-wing-menu .balls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .bottom-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+    .bottom-divider .bottom-middle-wing {
+        flex: 2;
+
+    }
+
+    .bottom-divider .bottom-right-wing .balls {
+        color: #20D3C2;
+        display: flex;
+
+    }
+
+    .bottom-divider .bottom-right-wing .balls span {
+        color: black;
+
+    }
+
+    .countdown-ball {
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        background-color: white;
+        outline: #20D3C2 dashed 2px;
+        outline-width: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right:1.875rem; 
+
+
+    }
+
+    .countdown-ball section {
+        font-family: var(--font-play);
+        font-size: 2.25rem;
+        text-align: center;
 
 
 
+    }
 
+    .countdown-ball span {
+              display: block;
+              text-align: center;
+              font-family: var(--font-roboto);
+              font-size: 1rem;
+              font-weight: var(--font-weight-regular);
+              
+    }
+
+    
+
+        .bottom-divider .bottom-right-wing .bottom-right-wing-menu a {
+            background-color: white;
+            color: #20D3C2;
+            border-radius: 30px;
+            margin-top: 1.875rem;
+        }
+
+    .bottom-divider .bottom-right-wing .bottom-link .btn:hover {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+    }
+
+        
 
 
 /* the instructions for adjustments are in video 3HTML och CSS grig and positioning starting at 55 min of the video */
