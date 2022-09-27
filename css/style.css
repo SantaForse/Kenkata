@@ -13,6 +13,7 @@
     --color-gray-2: #E3E3E3;
     --color-gray-3: #EEEEEE;
     --color-gray-4: #F6F6F6;
+    --color-gray-5: #777777;
     --color-product-instock: #82D8C6;
     --color-product-outofstock: #FE6C6C;
 
@@ -94,6 +95,15 @@ body {
 .outofstock {
     color: var(--color-product-outofstock);
 }
+
+
+.required {
+    color: var(--color-theme);
+
+}
+
+
+
 
 .section-title {
     padding: 3rem 0;
@@ -504,9 +514,7 @@ body {
 
 /* shop by category */
 
-.shop-by-category {
 
-}
 
     .shop-by-category .grid {
         display: grid;
@@ -734,13 +742,134 @@ body {
     font-weight: var(--font-weight-medium);
     }
 
-    .site-title nav ul {
+        .site-title nav ul {
         display: flex;
         align-items: center;
         margin: 0;
         padding: 0;
         list-style: none;
+        }
+
+    .site-title .breadcrumb {
+    list-style: none;
+    margin: 0;
+    
+   }
+
+        .site-title .breadcrumb li {
+            display: inline;
+            font-size: 18px;
+        }
+
+        .site-title  .breadcrumb li+li:before {
+            padding: 0 0.7rem 0 0.7rem;
+            color: var(--color-white);
+            content: "/\00a0";
+        }
+
+        .site-title .breadcrumb li a {
+            color: var(--color-theme);
+            text-decoration: none;
+            
+        }
+
+        .site-title .breadcrumb li a:hover {
+            color: var var(--color-white);
+            text-decoration: underline;
+        }
+/* singup and singin parts */
+
+
+
+        .form-theme .card {
+        border: none;
+        padding: 1.5rem;
+        border-radius: var(--border-radius-small);
+        background-color: var(--color-gray-4);
+
     }
+
+
+            .form-theme .card .card-body h1 {
+            font-family: var(--font-roboto);
+            color: var(--color-theme-dark);
+            font-size: 1.5rem;
+            font-weight: var(--font-weight-medium);
+
+
+            }
+
+                .form-theme .card .card-body .card-text {
+                margin: 1.5rem 0;
+                line-height: 2;
+
+            }
+
+                .form-theme .card .card-body .card-text a {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-bold);
+                text-decoration: none;
+            }
+
+                .form-theme .card .card-body .card-text a:hover {
+                    text-decoration: underline;
+                }
+
+                .form-theme .card .card-body .text-small {
+                color: var(--color-gray-5);
+                font-size: 0.875rem;
+
+            }
+
+            .form-theme form input[type=checkbox] {
+                height: 1rem;
+                width: 1rem;
+                display: inline-block;
+
+            }
+
+            .signup-signin.form-theme form input[type=checkbox] {
+                margin-right: 0.5rem;
+            }
+
+                .form-theme form input[type=text],
+                .form-theme form input[type=email],
+                .form-theme form input[type=password] {
+                display: block;
+                width: 100%;
+                border-radius: var(--border-radius-small);
+                padding: 0.6rem 0.9rem;
+                margin: 0.5rem 0;
+                border: none;
+            }
+
+                .form-theme form input:focus {
+                outline: 0;
+                box-shadow: 0 0 6px 0 var(--color-gray-0);
+            }
+
+.signup-signin{
+    padding: 6rem 0;
+
+}
+
+        .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.8rem;
+        align-items: start;
+        
+    }
+
+            
+
+
+
+
+
+
+
+
 
 
 /* divider part, 30%off */
@@ -1240,8 +1369,14 @@ body {
     height: 5rem;
     background-color: #080C24;
     color:var(--color-white);
+    display: flex;
+    align-items: center;
+    
 }
-
+    .the-end .container {
+        display: flex;
+        align-items: center;        
+    }
 
 
 
