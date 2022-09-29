@@ -202,6 +202,7 @@ body {
 
 .top-menu .menu-links {
     display: none;
+    
 }                
 
     .top-menu .menu-links .links {
@@ -260,14 +261,61 @@ body {
 
     .main-menu .search {
         flex: 4;
+        
     }
 
-    .main-menu .links {
+    .main-menu .search #searchboxform {
+        border-radius: var(--border-radius-medium);
+        height: 45px;
+        margin: auto;
+        position: relative;
+
+    }
+
+    .main-menu .search #searchboxform input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: 1px solid var(--color-gray-2);
+        font-size: 0.9rem;
+        padding: 1.3rem;
+        
+    }
+
+    .main-menu .search #searchboxform button {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: 50px;
+        height: 100%;
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+        border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+        transition: 250ms ease-in-out;
+        
+    }
+
+    .main-menu .search #searchboxform button:hover {
+        background-color: var(--color-theme-dark);
+        color: var(--color-theme);
+
+    }
+
+    .main-menu .search #searchboxform input:focus {
+        outline: 0;
+        box-shadow: 0 0 6px 0 var(--color-gray-0);
+    }
+    
+
+
+    .main-menu .menu-links {
         flex: 3;
         display: flex;
         justify-content: end;
         align-items: center;
-        
     }
 
         .main-menu .menu-links .menu-link {
@@ -848,6 +896,18 @@ body {
                 box-shadow: 0 0 6px 0 var(--color-gray-0);
             }
 
+            #lostpassword {
+                color: var(--color-theme);
+                font-size: 1rem;
+                font-family: var(--font-roboto);
+                font-weight: var(--font-weight-regular);
+            }
+
+            #lostpassword:hover {
+                text-decoration: none;
+                color: var(--color-theme-dark);
+            }
+
 .signup-signin{
     padding: 6rem 0;
 
@@ -861,6 +921,67 @@ body {
         
     }
 
+
+    .external-logins {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+
+    }
+
+        .external-logins .label {
+            background-color: var(--color-gray-4);
+            padding: 0 1rem;
+            z-index: 2;
+        }
+
+            .external-logins .line {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                right: 0;
+                border: 1px solid #AAAAAA;
+                z-index: -1;
+                opacity: 0.5;
+            }
+            
+.external-socialmedia-buttons   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+.external-socialmedia-buttons .facebook-button {
+    background-image: url(/images/buttons/facebook-login.svg);
+    background-repeat: no-repeat;
+    border: none;
+    height: 42px;
+    width: 235px;
+    border-radius: 8px;
+
+
+}
+
+.external-socialmedia-buttons .facebook-button:hover {
+    filter: brightness(80%);
+}
+
+.external-socialmedia-buttons .google-button:hover {
+    filter: brightness(80%);
+}
+
+.external-socialmedia-buttons .google-button {
+
+    background-image: url(/images/buttons/google-login.svg);
+    background-repeat: no-repeat;
+    border: none;
+    height: 42px;
+    width: 235px;
+    border-radius: 8px;
+    
+
+}
             
 
 
