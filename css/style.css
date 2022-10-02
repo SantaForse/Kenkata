@@ -35,9 +35,8 @@
 }
 
 
+/* general stuff */
 
-
-/* general */
 html,
 body {
     font-size: 16px;
@@ -103,7 +102,7 @@ body {
 
 
 
-
+/* the design for divider parts: shop by category, new arrivals, featured products, top sellers. big title, wave line under and small text under */
 .section-title {
     padding: 3rem 0;
     color: var(--color-theme-dark);
@@ -142,13 +141,11 @@ body {
         padding: 0;
     }
 
-
-
         .top-menu .site-settings  {
             display: flex;
         }
     
-            /* fixes the drop down menu, not sure if this part is needed, the same value as inherited */
+            /* fixes the drop down menu */
             .top-menu .site-settings .dropdown-theme {
                 background-color: var(--color-theme);
                 color: var var(--color-white);
@@ -198,6 +195,7 @@ body {
                             color: var(--color-theme-dark);
                         }
 
+/* the right top side of the website, with newsletter, contact and FAQ + social media symbols */
     .top-menu .menu-links {
         display: none;
     }                
@@ -236,7 +234,7 @@ body {
                 }
 
 
-/* Main menu */
+/* Main menu part, the part with kenkata logo, search form, my account and symbols:heart, shuffle, shopping bag */
 
 .main-menu {
    background-color: color var(--color-white); 
@@ -256,7 +254,7 @@ body {
         .main-menu .search {
             flex: 4;
         }
-
+            /* the search form */
             .main-menu .search #searchboxform {
                 border-radius: var(--border-radius-medium);
                 height: 45px;
@@ -299,7 +297,7 @@ body {
                     }
                     
 
-
+    /* the part on the right from the search form: my account and symbols */
     .main-menu .menu-links {
         flex: 3;
         display: flex;
@@ -311,7 +309,6 @@ body {
             text-decoration: none;
             color: var(--color-theme-dark);
             margin: 0 0.7rem;
-            /* need to change later, do not hover at the same time */
             transition: color 0.3s ease-in-out; 
         }
             .main-menu .menu-links .menu-link:hover {
@@ -351,7 +348,7 @@ body {
 
 
 
-
+    /* the browse categories part, drop-down menu */
     .main-menu nav {
         border-top: 1px solid var(--color-gray-2);
         border-bottom: 1px solid var(--color-gray-2);
@@ -387,7 +384,7 @@ body {
                 padding: 0.7rem 1rem;
                 transition: 0.3s ease-in-out;
 
-                    /* Remove this later */
+                    
                 white-space: nowrap;
             }
 
@@ -420,7 +417,7 @@ body {
                         color:var(--color-theme-dark);
                     }
 
-
+            /* the special offer button, on the left from the browse categories */
             .main-menu nav .special-offer {
                 flex: 4;
                 display: flex;
@@ -429,7 +426,7 @@ body {
             }
 
 
-/* showcase */
+/* showcase of the website, big title with the picture and shop now button */
 
 .showcase {
     background-color: var(--color-gray-3);
@@ -483,7 +480,7 @@ body {
             }
 
 
-/* webshop-info */
+/* webshop-info, four windows under the showcase, before the shop by category */
 
 .webshop-info {
     padding: 4rem 0;
@@ -536,7 +533,7 @@ body {
 
     
 
-/* shop by category */
+/* shop by category, grid with different categories of the products */
 
     .shop-by-category .container {
         padding: 0;
@@ -624,21 +621,21 @@ body {
     } 
 
 
-
+/* new arrivals part,  flex with 3 cards (with effects) */
 .new-arrivals {
     padding-top: 2rem;
     padding-bottom:10.125rem ;
 }
 
     
-    
-
     .new-arrivals .card {
         position: relative;
         height: 380px; 
         width: 320px;
         overflow: hidden;
         margin: auto;
+        background-color: var(--color-gray-4);
+        border: none;
     }
 
         .new-arrivals .card img {
@@ -741,7 +738,7 @@ body {
 
 
 
-/* the start of work on my account page, divider */
+/* the start of work on my account page, divider with dark background and home button */
 .site-title {
     background-color: var(--color-theme-dark-light);
     color: #FFFFFF;
@@ -801,7 +798,7 @@ body {
             text-decoration: underline;
         }
 
-/* singup and singin parts */
+/* signup and signin parts */
 /* the login part of the account page and register part of the page */
 
         .form-theme .card {
@@ -912,6 +909,7 @@ body {
                 opacity: 0.5;
             }
             
+/* facebook and google buttons in the bottom of the login form */
 .external-socialmedia-buttons   {
     display: flex;
     align-items: center;
@@ -959,7 +957,6 @@ body {
     .divider .container {
         display: flex;
         min-height: 420px;
-        border: 1px black solid;
         padding: 0;
     }
 
@@ -970,18 +967,10 @@ body {
             color: white;
             padding: 2rem 0; 
             display: flex;  
-            border: 1px black solid;    
             align-items: center;
             justify-content: center;
             width: 250px;
-
         }
-
-            .divider .left-wing .left-wing-menu {
-                
-                border: 1px black solid;
-
-            }
 
                 .divider .left-wing .left-wing-menu h1 {
                     font-size:3.75rem;
@@ -1013,6 +1002,7 @@ body {
                     font-family: var(--font-roboto);
                     font-size: 18px;
                     font-weight: var(--font-weight-medium);
+                    transition: 0.3s ease-in-out;
                 }
             
                     .btn-off:hover {
@@ -1027,7 +1017,6 @@ body {
 
         .divider .middle-wing {
             flex: 2;
-
         }
 
     /* the right part of the divider, with the text and learn more button */
@@ -1053,6 +1042,7 @@ body {
                 font-family: var(--font-roboto);
                 font-size: 18px;
                 font-weight: var(--font-weight-medium);
+                transition: 0.3s ease-in-out;
             }
         
                 .btn-learn:hover {
@@ -1067,7 +1057,6 @@ body {
 
 .bottom-divider {
     background-color: #292F51;
-
 }
 
     .bottom-divider .container {
@@ -1087,7 +1076,6 @@ body {
             align-items: center;
             justify-content: center;
             height: 61%;
-            border: 2px black solid;
         }
     
             .bottom-left-wing-menu h1 {
@@ -1105,8 +1093,8 @@ body {
 /* the middle part of the divider, space between flash sale and balls */
         .bottom-divider .bottom-middle-wing {
             flex: 2;
-
         }
+
 /* the right part of the divider, with the countdown balls and shop now button  */
         .bottom-divider .bottom-right-wing {
             flex: 1;
@@ -1177,6 +1165,7 @@ body {
                         color: #20D3C2;
                         border-radius: 30px;
                         margin-top: 1.875rem;
+                        transition: 0.3s ease-in-out;
                     }
 
                         .bottom-divider .bottom-right-wing .bottom-link .btn:hover {
@@ -1186,7 +1175,6 @@ body {
 
 
 /* top sellers grid part, with three pictures */
-
 
 
 .top-sellers .container {
@@ -1224,7 +1212,7 @@ body {
 
 .top-sellers {
     padding-top: 2rem;
-    padding-bottom:10.125rem;
+    padding-bottom: 10.125rem;
 }
 
     .top-sellers .container {
@@ -1236,6 +1224,8 @@ body {
             height: 43.75rem; 
             width: 34.375rem;
             overflow: hidden;
+            background-color: var(--color-gray-4);
+            border: none;
         }
 
         .top-sellers .small .card {
@@ -1243,6 +1233,8 @@ body {
             height: 21.56rem; 
             width: 34.375rem;
             overflow: hidden;
+            background-color: var(--color-gray-4);
+            border: none;
         }
 
             .top-sellers .card img {
@@ -1265,7 +1257,7 @@ body {
             .top-sellers .big .card .card-body {
                 position: absolute;
                 bottom: 0;
-                height: 7.5%;
+                height: 7%;
                 width: 100%;
                 color: var(--color-white);
                 z-index: 1;
@@ -1275,6 +1267,10 @@ body {
 
                 .top-sellers .card:hover .card-body {
                     height: 40%;
+                }
+
+                .top-sellers .big .card:hover .card-body {
+                    height: 20%;
                 }
 
                 .top-sellers .card .card-body h1 {
@@ -1296,7 +1292,6 @@ body {
                     padding-left: 0.9rem;
                     padding-right: 0.9rem;
                     margin: 0.5rem 0;
-
                 }
 
                 .top-sellers .card .card-body .card-old-price {
@@ -1347,7 +1342,6 @@ body {
             border-radius: var(--border-radius-medium);
             background-color: var(--color-white);
             transition: top 0.5s ease-out;
-
         }
 
             .top-sellers .card:hover .card-menu {
@@ -1369,11 +1363,10 @@ body {
                     }
 
 
-/* subscribe divider */
+/* subscribe divider, with the text and search form with subscribe button */
 
 .subscribe-divider {
     background-color: #F6F6F6;
-
 }
 
     .subscribe-divider .container {
@@ -1381,9 +1374,9 @@ body {
         min-height: 19.5rem;
         padding-right: 0;
         padding-left: 0;
-        
-        
     }
+
+/* the left side of the subscribe divider */
 
         .subscribe-divider .left-wing {
             flex: 1;
@@ -1397,29 +1390,24 @@ body {
             justify-content: center;
             /* width: 24.375rem; */
             margin-right: 15px;
-            
         }
 
             .subscribe-divider .left-wing .left-wing-menu {
-                /* width: 24.375rem; */
                 flex: 1;
-                
-                
             }
 
                 .subscribe-divider .left-wing .left-wing-menu h1 {
                     font-size:2.25rem;
                     font-family: var(--font-play);
                     font-weight: bold;
-
                 }
 
-                .subscribe-divider .left-wing .left-wing-menu strong {
-                    font-size: 2.25rem;
-                    font-family: var(--font-play);
-                    font-weight: bold;
-                    color: var(--color-theme);
-                }
+                    .subscribe-divider .left-wing .left-wing-menu strong {
+                        font-size: 2.25rem;
+                        font-family: var(--font-play);
+                        font-weight: bold;
+                        color: var(--color-theme);
+                    }
 
                 .subscribe-divider .left-wing .left-wing-menu p {
                     font-size: 1rem;
@@ -1430,71 +1418,66 @@ body {
 
 
 
-            .subscribe-divider .container .left-wing .search {
-            width: 440px ;
-                
-                
-            }
-        
-                .subscribe-divider .container .left-wing .search #searchboxform {
-                    border-radius: var(--border-radius-medium);
-                    height: 45px;
-                    margin: auto;
-                    position: relative;
-            
+                .subscribe-divider .container .left-wing .search {
+                width: 440px ;
                 }
         
-                    .subscribe-divider .left-wing .search #searchboxform input {
-                        position: absolute;
+                    .subscribe-divider .container .left-wing .search #searchboxform {
                         border-radius: var(--border-radius-medium);
-                        height: 100%;
-                        width: 100%;
-                        outline: none;
-                        border: 1px solid var(--color-gray-2);
-                        font-size: 0.9rem;
-                        padding: 1.3rem;
-                        
+                        height: 45px;
+                        margin: auto;
+                        position: relative;
                     }
         
-                    .subscribe-divider .search #searchboxform button {
-                        position: absolute;
-                        top: 0;
-                        right: 0px;
-                        width: 105px;
-                        height: 38px;
-                        background-color: var(--color-theme);
-                        color: var(--color-white);
-                        border: none;
-                        border-radius:var(--border-radius-medium);
-                        transition: 250ms ease-in-out;
-                        margin: 3px;
-                        font-family:  var(--font-roboto);
-                        font-size: 1rem;
-                        text-decoration: none;
-                        font-weight: var(--font-weight-regular);
-                    }
-        
-                        .subscribe-divider .search #searchboxform button:hover {
-                            background-color: var(--color-theme-dark);
-                            color: var(--color-theme);
-                    
+                        .subscribe-divider .left-wing .search #searchboxform input {
+                            position: absolute;
+                            border-radius: var(--border-radius-medium);
+                            height: 100%;
+                            width: 100%;
+                            outline: none;
+                            border: 1px solid var(--color-gray-2);
+                            font-size: 0.9rem;
+                            padding: 1.3rem;
                         }
         
-                .subscribe-divider .search #searchboxform input:focus {
-                    outline: 0;
-                    box-shadow: 0 0 6px 0 var(--color-gray-0);
-                }
+                        .subscribe-divider .search #searchboxform button {
+                            position: absolute;
+                            top: 0;
+                            right: 0px;
+                            width: 105px;
+                            height: 38px;
+                            background-color: var(--color-theme);
+                            color: var(--color-white);
+                            border: none;
+                            border-radius:var(--border-radius-medium);
+                            transition: 250ms ease-in-out;
+                            margin: 3px;
+                            font-family:  var(--font-roboto);
+                            font-size: 1rem;
+                            text-decoration: none;
+                            font-weight: var(--font-weight-regular);
+                        }
+        
+                            .subscribe-divider .search #searchboxform button:hover {
+                                background-color: var(--color-theme-dark);
+                                color: var(--color-theme);
+                            }
+        
+                            .subscribe-divider .search #searchboxform input:focus {
+                                outline: 0;
+                                box-shadow: 0 0 6px 0 var(--color-gray-0);
+                            }
 
+/* the right side of the subscribe divider, darker gray color piece */
 
         .subscribe-divider .right-wing {
             flex: 1;
             background-color: #CCCCCC;
             margin-left: 15px;
-        
         }
 
 
-/* the end of the website */
+/* the very end of the website, dark line with copyright */
 
 .the-end {
     height: 5rem;
@@ -1502,13 +1485,11 @@ body {
     color:var(--color-white);
     display: flex;
     align-items: center;
-    
 }
     .the-end .container {
         display: flex;
         align-self: center;    
         padding-left: 0; 
-     
     }
 
         .the-end .container .end-title {
@@ -1546,26 +1527,117 @@ body {
         
 
 
-/* the instructions for adjustments are in video 3HTML och CSS grig and positioning starting at 55 min of the video */
+
 /* adjusting the website to different devices/sizes */
+/* started, but not finished, due to lack of time */
 
 @media (max-width: 578px) {
 
+    /* logotype */
     .main-menu .brand a {
         padding-left: 1rem;
     }
 
+    /* the big title on the showcase */
+    .showcase .showcase-body h1 {
+        font-size: 65px;
+    }
+
+    /* only the bag, removing the sum of money next to it */
     .main-menu .container .menu-links .menu-link:last-child span {
         display: none;
     }
 
-
-
+    /* windows under the showcase */
     .webshop-info .container {
         display: inline;
-        
     }
 
+    /* 4 same dividers */
+    .new-arrivals {
+        padding-top: 2rem;
+        padding-bottom:2rem ;
+    }
+
+    /* divider on 30% off  */
+    .divider .container {
+        flex-direction: column;
+        min-height: 420px;
+        padding: 0;
+        align-items: center;
+    }
+
+    .divider .right-wing {
+        text-align: center;
+    }
+
+    /* divider 50% off */
+    .bottom-divider .container {
+        flex-direction: column;
+        padding: 0;
+        height: 300px;
+    }
+    
+    .bottom-left-wing {
+        flex: 1;
+        background-color: #292F51;;
+         text-align: center;
+        color: white;
+        padding: 2rem 0; 
+        display: flex;     
+        align-items: center;
+        justify-content: center;
+        height: 35%;
+    }
+
+        .bottom-left-wing-menu h1 {
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+            font-size: 3rem;
+        }
+    
+        .countdown-ball {
+            height: 90px;
+            width: 90px;
+        }
+
+            .countdown-ball section {
+                font-size: 1.8rem;
+            }
+
+            .countdown-ball span {
+                    font-size: 0.9rem;    
+            }
+
+    /*grid under top sellers  */
+
+    
+    .top-sellers {
+        padding-bottom: 3rem;
+    }
+
+    .top-sellers .grid-container {
+        display: inline;
+    }
+
+    /* login form and register form on account page */
+    .signup-signin .container {
+        display: inline;  
+        }
+
+        .form-theme {
+            padding: 0;
+        }
+
+    /* windows before shop by category */
+        .webshop-info {
+            padding: 0;
+        }
+
+        .webshop-info .info-box { 
+            margin: 1rem;
+        }
 
 }
 
@@ -1656,6 +1728,8 @@ body {
 
 @media (max-width: 992px) {
 
+    
+
 .main-menu .container .menu-links .menu-link:first-child {
     margin: 0;
 }
@@ -1671,7 +1745,6 @@ body {
 
 .main-menu .container .browse-categories .dropdown button {
     justify-content: center;
-    
     }
 
 .showcase .showcase-body {
