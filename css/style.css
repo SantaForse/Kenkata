@@ -655,15 +655,22 @@ body {
         padding-bottom:10.125rem ;
     }
 
+    
+    .new-arrivals .col {
+
+    }
+
         .new-arrivals .card {
             position: relative;
-             height: 380px; 
+            height: 380px; 
             width: 320px;
             overflow: hidden;
+            margin: auto;
         }
 
         .new-arrivals .card img {
              height: 400px; 
+             
         }
 
             .new-arrivals .card .card-body {
@@ -1046,16 +1053,23 @@ body {
             }
 
 
-            .divider .left-wing a {
-            background-color: #0E153D;
-            color: white;
-            border-radius: 30px;
-        }
-
-        .divider .left-wing a:hover {
-            background-color: var(--color-white);
-            color: var(--color-theme-dark);
-        }
+            .btn-off {
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+                border-radius: var(--border-radius-medium);
+                font-weight: var(--font-weight-medium);
+                padding-left: 1.31rem;
+                padding-right: 1.31rem;
+                border: none;
+                font-family: var(--font-roboto);
+                font-size: 18px;
+                font-weight: var(--font-weight-medium);
+            }
+            
+                .btn-off:hover {
+                    background-color: var(--color-white);
+                    color: var(--color-theme);
+                }
 
         
 
@@ -1079,23 +1093,28 @@ body {
         
         }
 
+        .btn-learn {
+            background-color: var(--color-white);
+            color: var(--color-theme);
+            border-radius: var(--border-radius-medium);
+            font-weight: var(--font-weight-medium);
+            padding-left: 1.31rem;
+            padding-right: 1.31rem;
+            border: none;
+            font-family: var(--font-roboto);
+            font-size: 18px;
+            font-weight: var(--font-weight-medium);
+        }
+        
+            .btn-learn:hover {
+                background-color: var(--color-theme-dark);
+                color: var(--color-theme);
+            }
+
        
 
 
-        .divider .right-wing a {
-                background-color: white;
-                color: #20D3C2;
-                border-radius: 30px;
-                width: 10.7rem;
-                height: 3.375rem;
-                text-align: center;
-            
-            }
-
-            .divider .right-wing a:hover {
-                background-color: var(--color-theme-dark);
-                color: var(--color-white);
-            }
+        
 
 /* featured products placeholders things */
 
@@ -1178,7 +1197,12 @@ body {
     .bottom-divider .bottom-right-wing .balls {
         color: #20D3C2;
         display: flex;
+        
 
+    }
+
+    .bottom-divider .bottom-right-wing .balls :last-child {
+        margin-right:0 ;
     }
 
     .bottom-divider .bottom-right-wing .balls span {
@@ -1444,15 +1468,18 @@ body {
             color: var(--color-theme-dark);
             padding-top:3.75rem; 
             display: flex;  
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             /* width: 24.375rem; */
+            margin-right: 15px;
             
         }
 
         .subscribe-divider .left-wing .left-wing-menu {
             /* width: 24.375rem; */
             flex: 1;
+            
             
         }
 
@@ -1474,12 +1501,73 @@ body {
                 font-size: 1rem;
                 font-family: var(--font-roboto);
                 font-weight: var(--font-weight-regular);
+                margin-right: 220px;
+            }
+
+
+
+            .subscribe-divider .container .left-wing .search {
+            width: 440px ;
+                
+                
+            }
+        
+            .subscribe-divider .container .left-wing .search #searchboxform {
+                border-radius: var(--border-radius-medium);
+                height: 45px;
+                margin: auto;
+                position: relative;
+        
+            }
+        
+            .subscribe-divider .left-wing .search #searchboxform input {
+                position: absolute;
+                border-radius: var(--border-radius-medium);
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: 1px solid var(--color-gray-2);
+                font-size: 0.9rem;
+                padding: 1.3rem;
+                
+            }
+        
+            .subscribe-divider .search #searchboxform button {
+                position: absolute;
+                top: 0;
+                right: 0px;
+                width: 105px;
+                height: 38px;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                border-radius:var(--border-radius-medium);
+                transition: 250ms ease-in-out;
+                margin: 3px;
+                font-family:  var(--font-roboto);
+                font-size: 1rem;
+                text-decoration: none;
+                font-weight: var(--font-weight-regular);
+                
+                
+            }
+        
+            .subscribe-divider .search #searchboxform button:hover {
+                background-color: var(--color-theme-dark);
+                color: var(--color-theme);
+        
+            }
+        
+            .subscribe-divider .search #searchboxform input:focus {
+                outline: 0;
+                box-shadow: 0 0 6px 0 var(--color-gray-0);
             }
 
 
         .subscribe-divider .right-wing {
             flex: 1;
             background-color: #CCCCCC;
+            margin-left: 15px;
         
         }
 
@@ -1496,7 +1584,15 @@ body {
 }
     .the-end .container {
         display: flex;
-        align-items: center;        
+        align-self: center;    
+        padding-left: 0; 
+     
+    }
+
+    .the-end .container .end-title {
+        font-family: var(--font-roboto);
+        font-size: 16px;
+        font-weight: var(--font-weight-regular);
     }
 
 
